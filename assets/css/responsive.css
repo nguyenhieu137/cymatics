@@ -1,0 +1,113 @@
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet & mobile */
+@media(max-width: 63.9375em) {
+    
+}
+
+/* Tablet */
+
+@media(min-width: 46.25em) and (max-width: 63.9375em) {
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: unset;
+        padding-bottom: 74px;
+    }
+
+    .box {
+        flex: 1 1 150px;
+        background: #1D1C1C;
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 8px;
+    }
+    .box .img .product-img {
+        height: 140px;
+        width: 150px;
+        object-fit: scale-down;
+    }
+
+    #footer {
+        width: 100%;
+        height: 130px;
+        background-color: rgb(20, 20, 20);
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .copyright-info {
+        padding: unset;
+    }
+    
+    .copyright {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .terms-contact {
+        padding: 5px 0px;
+    }
+    
+    .social-list {
+        padding-top: 5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+
+
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: unset;
+        padding-bottom: 74px;
+    }
+    .box {
+        flex: 1 1 150px;
+        background: #1D1C1C;
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .box .img .product-img {
+        height: 110px;
+        width: 110px;
+        object-fit: scale-down;
+    }
+
+    #footer {
+        width: 100%;
+        height: 130px;
+        background-color: rgb(20, 20, 20);
+        display: inline-block;
+        text-align: center;
+    }
+    .copyright-info{
+        padding: unset;
+    }
+
+    .copyright{
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    .terms-contact{
+        padding: 5px 0px;
+    }
+    .social-list{
+        padding-top: 5px;
+    }
+
+}

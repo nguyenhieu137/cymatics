@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+    /* thẻ clear giải quyết vấn đề khi dùng float */
+}
+
+html {
+    font-family: 
+        "Segoe UI",
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+#header {
+    height: 60px;
+    background-color: #1d1c1c;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    /*chỉnh độ sâu của các thẻ ,khi scroll không bị thẻ khác che header */
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#nav {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#nav>li {
+    display: inline-block;
+    padding:10px 20px;
+    
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600; 
+    letter-spacing: .1px;
+    text-shadow: 1px 1px 2px black, 0 0 1px , 0 0 2px ;
+}
+
+#nav li a {
+    text-decoration: none;
+}
+
+.ti-shopping-cart{
+    font-size: 18px;
+}
+
+#nav>li:hover>a {
+    /*Hover của main nav*/
+    cursor: pointer;
+    text-decoration: underline;  
+}
+
+.logo {
+    max-width: 150px;
+    margin-top: 4px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+
+.sc-icon > i{
+    color: #fff;
+}
+
+#sale-banner{
+    background-color: #151414;
+    position: relative;
+    margin-top: 60px;
+    padding: 44px 20px;
+    text-align: center;
+    
+}
+
+#banner-info{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+#banner-info h2{
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+#banner-info p{
+    color: #ffffff;
+    opacity: .7;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+#sale-product img{
+    width: 45%;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#More-info{
+    padding-top: 20px;
+}
+
+#More-info button{
+    color:#FFFFFF;
+    width: 250px;
+    height: 54px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(90deg,#56E8D4,#54b0de,#54a9de,#56E8D4);
+    background-size: 400%;
+    box-shadow: 0 0 15px #55efcb;
+    opacity: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+#product-menu{
+    padding-top: 8px;
+    background-color: #090A0C;
+}
+
+#menu-select{
+    text-align: center;
+}
+
+#menu{
+    padding: 50px 0px;
+}
+
+
+#menu li{
+    display: inline-block; 
+}
+
+#menu li a{
+    position: relative;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .7;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+#menu li a.active{
+    font-weight: bold;
+    opacity: 1;
+    border-radius: 30px;
+    background-color: #1D1C1C;
+}
+
+#menu li a:hover{
+    border-radius: 30px;
+    background-color: #272525;
+    transition:ease-in 0.2s;
+}  
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:0 300px;
+    padding-bottom: 74px;
+}
+
+.box{
+    flex: 1 1 250px;
+    background: #1D1C1C;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.box .img{
+    padding: 20px;
+    text-align: center;
+}
+
+.box .img .product-img{
+    height: 200px;
+    width: 200px;
+    object-fit:scale-down;
+}
+
+.info{
+    background: #111111;
+}
+
+.product-name{
+    padding-top: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.price{
+    padding-top: 10px;
+    color: #FFFFFF;
+    opacity: .7;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.new-price{
+    padding-top: 10px;
+    color: red;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.old-price{
+    padding-top: 10px;
+    color: #FFFFFF;
+    opacity: .7;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: line-through;
+    white-space: 2px;
+    padding-right: 10px;
+}
+
+#footer{
+    display:flex;
+    width:100%;
+    height: 74px;
+    background-color: #141414;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-info{
+    padding-right: 100px;
+}
+
+.copyright{
+    color: #fff;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    opacity: .7;
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.copyright a:hover,
+.terms-contact a:hover,
+.social-list a:hover,
+.social-list .icon:hover{
+    color: #282828;
+    transition: color 0.1s ease-in;
+}
+
+.terms-contact{
+    padding:0 100px;
+}
+
+.terms-contact a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+    opacity: .7;
+    font-size: 14px;
+}
+
+.social-list{
+    padding: 0 100px;
+}
+
+.social-list a{
+    color: #fff;
+    padding: 0 10px;
+    opacity: .7;
+    font-size: 14px;
+}
+
+.social-list .icon{
+    font-size: 16px;
+    color: #fff;
+    padding: 0 10px;
+    opacity: .7;
+}
